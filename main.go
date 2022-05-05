@@ -38,10 +38,10 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		var node []models.myNode
+		var node []myNode
 		for _, d := range no.Items {
 			fmt.Printf(" %s\n", d.Name)
-			node = append(node, models.myNode{d.Name})
+			node = append(node, myNode{d.Name})
 
 		}
 		return c.JSON(node)
