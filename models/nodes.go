@@ -1,5 +1,6 @@
 package models
 
-type myNode struct {
-	Name string `json:"name"`
+type MyNode struct {
+	Name   string            `json:"name"`
+	Labels map[string]string `json:"labels"`
 }
